@@ -21,7 +21,6 @@ import SwitchedType = require('./Types/SwitchedType');
 import TeamNameType = require('./Types/TeamNameType');
 import TeamTriggeredType = require('./Types/TeamTriggeredType');
 import ThrewType = require('./Types/ThrewType');
-import UnknownType = require('./Types/UnknownType');
 import ValidatedType = require('./Types/ValidatedType');
 import WarmodType = require('./Types/WarmodType');
 
@@ -31,7 +30,7 @@ export class SrcdsLogParser {
 	parseLine(line:string) : t.ISrcdsLog {
 		let date = this.getDate(line.slice(0, lengthOfDate - 2));
 		
-		return t.SrcdsLog.getIt(date, line.slice(lengthOfDate));
+		return this.getInstanceOf(date, line.slice(lengthOfDate));
 	}
 
 	private getDate(dateTokens: string) : moment.Moment {
@@ -57,7 +56,7 @@ export class SrcdsLogParser {
 		if (returnValue) 
 			return returnValue;
 		else
-			return new UnknownType.UnknownType(time, rawMessage);
+			return new SrcdsLogType.UnknownType(time, rawMessage);
 	}
 }
 
