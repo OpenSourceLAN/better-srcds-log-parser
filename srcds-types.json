@@ -1,0 +1,232 @@
+{
+    "Killed": {
+        "AttackingPlayer": {
+            "Name": "Player",
+            "PlayerID": 6,
+            "SteamID": "STEAM_1:0:123123123",
+            "Team": 0
+        },
+        "AttackingLocation": {
+            "x": -2374,
+            "y": 89,
+            "z": -240
+        },
+        "Type": "Killed",
+        "VictimPlayer": {
+            "Name": "blah",
+            "PlayerID": 9,
+            "SteamID": "STEAM_1:0:12312312",
+            "Team": 1
+        },
+        "VictimLocation": {
+            "x": -2435,
+            "y": 1474,
+            "z": 46
+        },
+        "Weapon": "m4a1_silencer",
+        "How": "headshot"
+    },
+    "Purchased": {
+        "Type": "Purchased",
+        "Player": {
+            "Name": "blah",
+            "PlayerID": 9,
+            "SteamID": "STEAM_1:0:13123123",
+            "Team": 1
+        },
+        "ItemPurchased": "awp"
+    },
+    "Attacked": {
+        "AttackingPlayer": {
+            "Name": "blah",
+            "PlayerID": 6,
+            "SteamID": "STEAM_1:0:1123123",
+            "Team": 0
+        },
+        "AttackingLocation": {
+            "x": -2434,
+            "y": 379,
+            "z": -240
+        },
+        "Type": "Attacked",
+        "VictimPlayer": {
+            "Name": "blah",
+            "PlayerID": 10,
+            "SteamID": "STEAM_1:1:123123123",
+            "Team": 1
+        },
+        "VictimLocation": {
+            "x": -1837,
+            "y": 1535,
+            "z": 0
+        },
+        "Weapon": "m4a1",
+        "DamageAmount": 5,
+        "DamageArmourAmount": 1,
+        "RemainingHealth": 95,
+        "RemainingArmour": 98,
+        "HitGroup": "chest"
+    },
+    "Connection": {
+        "Player": {
+            "Name": "blah",
+            "PlayerID": 11,
+            "SteamID": "STEAM_1:0:13123123",
+            "Team": 4
+        },
+        "Action": 1,
+        "Type": "Connection"
+    },
+    "Validated": {
+        "Type": "Validated",
+        "Player": {
+            "Name": "blah",
+            "PlayerID": 11,
+            "SteamID": "STEAM_1:0:1`2312312",
+            "Team": 4
+        },
+        "Success": true
+    },
+    "Say": {
+        "Player": {
+            "Name": "blah",
+            "PlayerID": 4,
+            "SteamID": "STEAM_1:0:123123",
+            "Team": 1
+        },
+        "To": "say",
+        "Message": "??????? ",
+        "Type": "Say"
+    },
+    "Assist": {
+        "Type": "Assist",
+        "Assistant": {
+            "Name": "blah",
+            "PlayerID": 8,
+            "SteamID": "STEAM_1:0:1123123",
+            "Team": 0
+        },
+        "Victim": {
+            "Name": "blah",
+            "PlayerID": 9,
+            "SteamID": "STEAM_1:0:12123",
+            "Team": 1
+        }
+    },
+    "PlayerTriggered": {
+        "Type": "PlayerTriggered",
+        "Player": {
+            "Name": "blah",
+            "PlayerID": 11,
+            "SteamID": "STEAM_1:0:123123",
+            "Team": 2
+        },
+        "Value": "",
+        "EventType": 12
+    },
+    "Switched": {
+        "Player": {
+            "Name": "blah",
+            "PlayerID": 11,
+            "SteamID": "STEAM_1:0:12123123",
+            "Team": 4
+        },
+        "FromTeam": 2,
+        "ToTeam": 1,
+        "Type": "Switched"
+    },
+    "Suicide": {
+        "Player": {
+            "Name": "blah",
+            "PlayerID": 4,
+            "SteamID": "STEAM_1:0:123123",
+            "Team": 1
+        },
+        "At": {
+            "x": -94,
+            "y": 2250,
+            "z": -201
+        },
+        "With": "world",
+        "Type": "Suicide"
+    },
+    "Rcon": {
+        "CommandSourceAddress": "12.36.87.124:49987",
+        "Command": "say no you ' re ares",
+        "Type": "Rcon"
+    },
+    "PlayerName": {
+        "Player": {
+            "Name": "oldname",
+            "PlayerID": 14,
+            "SteamID": "STEAM_1:0:123123",
+            "Team": 0
+        },
+        "NewName": "newname",
+        "Type": "PlayerName"
+    },
+    "Warmod": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:06:20",
+            "event": "log_start",
+            "unixTime": 1465466780
+        },
+        "Type": "Warmod"
+    },
+    "ServerCvar": {
+        "Cvar": "mp_freezetime",
+        "Value": "12",
+        "Type": "ServerCvar"
+    },
+    "TeamName": {
+        "Team": 0,
+        "Name": "somename",
+        "Type": "TeamName"
+    },
+    "Scored": {
+        "Type": "Scored",
+        "Team": 0,
+        "Score": 0,
+        "PlayerCount": 5
+    },
+    "TeamTriggered": {
+        "Type": "TeamTriggered",
+        "Team": 1,
+        "TerroristScore": 1,
+        "CounterTerroristScore": 0,
+        "EventType": 1
+    },
+    "Spawned": {
+        "ItemSpawned": "Molotov",
+        "SpawnedAt": {
+            "x": -691,
+            "y": -651,
+            "z": 40
+        },
+        "Velocity": {
+            "x": -283,
+            "y": 509,
+            "z": 341
+        },
+        "Type": "Spawned"
+    },
+    "Threw": {
+        "Player": {
+            "Name": "blah",
+            "PlayerID": 6,
+            "SteamID": "STEAM_1:0:123123123",
+            "Team": 0
+        },
+        "ItemThrown": "molotov",
+        "ThrownFrom": {
+            "x": -773,
+            "y": -113,
+            "z": 130
+        },
+        "Type": "Threw"
+    },
+    "ServerEvent": {
+        "Type": "ServerEvent",
+        "EventType": 4
+    }
+}

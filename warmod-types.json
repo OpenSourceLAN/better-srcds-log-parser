@@ -1,0 +1,1192 @@
+{
+    "log_start": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:06:20",
+            "event": "log_start",
+            "unixTime": 1465466780
+        },
+        "Type": "Warmod"
+    },
+    "player_status": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:06:20",
+            "event": "player_status",
+            "player": {
+                "name": "eLeague.gg Server GOTV",
+                "userId": 3,
+                "uniqueId": "BOT",
+                "team": 0
+            },
+            "address": "127.0.0.1",
+            "country": ""
+        },
+        "Type": "Warmod"
+    },
+    "knife_on_3": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:06:20",
+            "event": "knife_on_3",
+            "map": "de_cbble",
+            "teams": [
+                {
+                    "name": "blah",
+                    "team": 2
+                },
+                {
+                    "name": "blah",
+                    "team": 3
+                }
+            ],
+            "server": {
+                "name": "blah",
+                "ip": "5.6.4.7",
+                "port": 27015
+            }
+        },
+        "Type": "Warmod"
+    },
+    "knife_player_say": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:06:20",
+            "event": "knife_player_say",
+            "round": 1,
+            "player": {
+                "name": "blah",
+                "userId": 14,
+                "uniqueId": "STEAM_1:0:1234567",
+                "team": 3
+            },
+            "message": ".r",
+            "teamOnly": 0
+        },
+        "Type": "Warmod"
+    },
+    "knife_item_pickup": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:06:20",
+            "event": "knife_item_pickup",
+            "round": 1,
+            "player": {
+                "name": "blah",
+                "userId": 8,
+                "uniqueId": "STEAM_1:0:12354789",
+                "team": 3,
+                "origin": {
+                    "x": -2280,
+                    "y": -1696,
+                    "z": 40.19
+                },
+                "velocity": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "view": {
+                    "x": 0,
+                    "y": 117.5,
+                    "z": 0
+                },
+                "health": 100,
+                "armor": 0,
+                "helmet": 0
+            },
+            "item": "knife"
+        },
+        "Type": "Warmod"
+    },
+    "knife_bomb_pickup": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:06:20",
+            "event": "knife_bomb_pickup",
+            "round": 1,
+            "player": {
+                "name": "willyKS",
+                "userId": 9,
+                "uniqueId": "STEAM_1:0:12345978",
+                "team": 2,
+                "origin": {
+                    "x": -722,
+                    "y": 2424,
+                    "z": -124.36
+                },
+                "velocity": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "view": {
+                    "x": 0,
+                    "y": 201,
+                    "z": 0
+                },
+                "health": 100,
+                "armor": 0,
+                "helmet": 0
+            }
+        },
+        "Type": "Warmod"
+    },
+    "knife_round_start": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:06:20",
+            "event": "knife_round_start",
+            "freezeTime": 12
+        },
+        "Type": "Warmod"
+    },
+    "round_restart": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:06:21",
+            "event": "round_restart",
+            "delay": 1
+        },
+        "Type": "Warmod"
+    },
+    "knife_player_trace": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:06:23",
+            "event": "knife_player_trace",
+            "round": 1,
+            "player": {
+                "name": "blah",
+                "userId": 5,
+                "uniqueId": "STEAM_1:1:blah",
+                "team": 3,
+                "origin": {
+                    "x": -2364,
+                    "y": -1816,
+                    "z": 34.03
+                },
+                "velocity": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "view": {
+                    "x": 0,
+                    "y": 55,
+                    "z": 0
+                },
+                "health": 100,
+                "armor": 100,
+                "helmet": 0
+            },
+            "weapon": "knife"
+        },
+        "Type": "Warmod"
+    },
+    "knife_round_freeze_end": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:06:38",
+            "event": "knife_round_freeze_end"
+        },
+        "Type": "Warmod"
+    },
+    "knife_player_hurt": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:06:50",
+            "event": "knife_player_hurt",
+            "round": 1,
+            "attacker": {
+                "name": "blah",
+                "userId": 8,
+                "uniqueId": "STEAM_1:0:blah",
+                "team": 3,
+                "origin": {
+                    "x": -2188.25,
+                    "y": 928.26,
+                    "z": -131.56
+                },
+                "velocity": {
+                    "x": 13.78,
+                    "y": 246.19,
+                    "z": 0
+                },
+                "view": {
+                    "x": -4.87,
+                    "y": 78.74,
+                    "z": 0
+                },
+                "health": 100,
+                "armor": 100,
+                "helmet": 0
+            },
+            "victim": {
+                "name": "blah",
+                "userId": 9,
+                "uniqueId": "STEAM_1:0:blah",
+                "team": 2,
+                "origin": {
+                    "x": -2166.49,
+                    "y": 998.35,
+                    "z": -116.77
+                },
+                "velocity": {
+                    "x": 46.37,
+                    "y": 142.36,
+                    "z": 0
+                },
+                "view": {
+                    "x": 15.95,
+                    "y": -94.45,
+                    "z": 0
+                },
+                "health": 67,
+                "armor": 97,
+                "helmet": 0
+            },
+            "weapon": "knife",
+            "damage": 33,
+            "damageArmor": 3,
+            "hitGroup": 0
+        },
+        "Type": "Warmod"
+    },
+    "knife_player_death": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:06:52",
+            "event": "knife_player_death",
+            "round": 1,
+            "attacker": {
+                "name": "blah",
+                "userId": 10,
+                "uniqueId": "STEAM_1:1:blah",
+                "team": 2,
+                "origin": {
+                    "x": -1921.15,
+                    "y": 896.37,
+                    "z": -104.92
+                },
+                "velocity": {
+                    "x": 118.42,
+                    "y": 0,
+                    "z": 0
+                },
+                "view": {
+                    "x": 17.42,
+                    "y": -146.35,
+                    "z": 0
+                },
+                "health": 46,
+                "armor": 95,
+                "helmet": 0
+            },
+            "assister": {},
+            "victim": {
+                "name": "blah",
+                "userId": 14,
+                "uniqueId": "STEAM_1:0:blah",
+                "team": 3,
+                "origin": {
+                    "x": -1950.48,
+                    "y": 864.37,
+                    "z": -108.4
+                },
+                "velocity": {
+                    "x": 81.58,
+                    "y": 0,
+                    "z": 0
+                },
+                "view": {
+                    "x": 1.72,
+                    "y": 73.92,
+                    "z": 0
+                },
+                "health": 0,
+                "armor": 0,
+                "helmet": 0
+            },
+            "weapon": "knife",
+            "headshot": 0
+        },
+        "Type": "Warmod"
+    },
+    "knife_round_end": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:06:56",
+            "event": "knife_round_end",
+            "round": 1,
+            "winner": 2,
+            "reason": 9
+        },
+        "Type": "Warmod"
+    },
+    "player_hurt": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:06:57",
+            "event": "player_hurt",
+            "round": 1,
+            "attacker": {
+                "name": "blah",
+                "userId": 11,
+                "uniqueId": "STEAM_1:0:blah",
+                "team": 2,
+                "origin": {
+                    "x": -1972.07,
+                    "y": 903.26,
+                    "z": -103.54
+                },
+                "velocity": {
+                    "x": -17.95,
+                    "y": 28.21,
+                    "z": 0
+                },
+                "view": {
+                    "x": 5.29,
+                    "y": 96.38,
+                    "z": 0
+                },
+                "health": 45,
+                "armor": 95,
+                "helmet": 0
+            },
+            "victim": {
+                "name": "blah",
+                "userId": 13,
+                "uniqueId": "STEAM_1:0:blah",
+                "team": 2,
+                "origin": {
+                    "x": -1943.21,
+                    "y": 931.98,
+                    "z": -100.26
+                },
+                "velocity": {
+                    "x": -83.79,
+                    "y": 50.36,
+                    "z": 0
+                },
+                "view": {
+                    "x": 12.13,
+                    "y": 173.09,
+                    "z": 0
+                },
+                "health": 78,
+                "armor": 98,
+                "helmet": 0
+            },
+            "weapon": "knife",
+            "damage": 22,
+            "damageArmor": 1,
+            "hitGroup": 0
+        },
+        "Type": "Warmod"
+    },
+    "player_trace": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:06:58",
+            "event": "player_trace",
+            "round": 1,
+            "player": {
+                "name": "blah",
+                "userId": 11,
+                "uniqueId": "STEAM_1:0:blah",
+                "team": 2,
+                "origin": {
+                    "x": -2258.13,
+                    "y": 951.11,
+                    "z": -77.33
+                },
+                "velocity": {
+                    "x": -155.59,
+                    "y": 180.02,
+                    "z": -57.38
+                },
+                "view": {
+                    "x": 11.09,
+                    "y": 138.07,
+                    "z": 0
+                },
+                "health": 45,
+                "armor": 95,
+                "helmet": 0
+            },
+            "weapon": "knife"
+        },
+        "Type": "Warmod"
+    },
+    "ready_system": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:07:01",
+            "event": "ready_system",
+            "enabled": false
+        },
+        "Type": "Warmod"
+    },
+    "live_on_3": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:07:01",
+            "event": "live_on_3",
+            "map": "de_cbble",
+            "teams": [
+                {
+                    "name": "blah",
+                    "team": 2
+                },
+                {
+                    "name": "blah.",
+                    "team": 3
+                }
+            ],
+            "status": 5,
+            "settings": {
+                "max_rounds": 30,
+                "overtime_enabled": 0,
+                "overtime_max_rounds": 6
+            },
+            "server": {
+                "name": "blah",
+                "ip": "1.2.3.4",
+                "port": 27015
+            },
+            "competition": "blah",
+            "event_name": "Winter 2016 Season",
+            "version": "15.12.10.1326"
+        },
+        "Type": "Warmod"
+    },
+    "item_pickup": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:07:02",
+            "event": "item_pickup",
+            "round": 1,
+            "player": {
+                "name": "blah",
+                "userId": 8,
+                "uniqueId": "STEAM_1:0:blah",
+                "team": 3,
+                "origin": {
+                    "x": -2192,
+                    "y": -1577,
+                    "z": 50.17
+                },
+                "velocity": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "view": {
+                    "x": 0,
+                    "y": 209,
+                    "z": 0
+                },
+                "health": 100,
+                "armor": 0,
+                "helmet": 0
+            },
+            "item": "knife"
+        },
+        "Type": "Warmod"
+    },
+    "bomb_pickup": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:07:02",
+            "event": "bomb_pickup",
+            "round": 1,
+            "player": {
+                "name": "blah",
+                "userId": 11,
+                "uniqueId": "STEAM_1:0:blah",
+                "team": 2,
+                "origin": {
+                    "x": -626,
+                    "y": 2200,
+                    "z": -143.21
+                },
+                "velocity": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "view": {
+                    "x": 0,
+                    "y": 289,
+                    "z": 0
+                },
+                "health": 100,
+                "armor": 95,
+                "helmet": 0
+            }
+        },
+        "Type": "Warmod"
+    },
+    "round_start": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:07:02",
+            "event": "round_start",
+            "freezeTime": 12
+        },
+        "Type": "Warmod"
+    },
+    "round_money": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:07:02",
+            "event": "round_money",
+            "round": 1,
+            "player": {
+                "name": "blah",
+                "userId": 10,
+                "uniqueId": "STEAM_1:1:blah",
+                "team": 2,
+                "origin": {
+                    "x": -774,
+                    "y": 2216,
+                    "z": -113.44
+                },
+                "velocity": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "view": {
+                    "x": 0,
+                    "y": 173,
+                    "z": 0
+                },
+                "health": 100,
+                "armor": 0,
+                "helmet": 0
+            },
+            "kills": 1,
+            "assists": 0,
+            "deaths": 1,
+            "score": 2,
+            "money": 4750
+        },
+        "Type": "Warmod"
+    },
+    "player_say": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:07:05",
+            "event": "player_say",
+            "round": 1,
+            "player": {
+                "name": "blah",
+                "userId": 12,
+                "uniqueId": "STEAM_1:0:blah",
+                "team": 2
+            },
+            "message": "hfhfhf",
+            "teamOnly": 0
+        },
+        "Type": "Warmod"
+    },
+    "player_name": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:07:12",
+            "event": "player_name",
+            "player": {
+                "name": "blah",
+                "userId": 14,
+                "uniqueId": "STEAM_1:0:blah",
+                "team": 3
+            },
+            "newName": "twitch.blah"
+        },
+        "Type": "Warmod"
+    },
+    "bomb_dropped": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:07:15",
+            "event": "bomb_dropped",
+            "round": 1,
+            "player": {
+                "name": "blah",
+                "userId": 9,
+                "uniqueId": "STEAM_1:0:blah",
+                "team": 2,
+                "origin": {
+                    "x": -498,
+                    "y": 2184,
+                    "z": -159.71
+                },
+                "velocity": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "view": {
+                    "x": -10.94,
+                    "y": 150.01,
+                    "z": 0
+                },
+                "health": 100,
+                "armor": 0,
+                "helmet": 0
+            }
+        },
+        "Type": "Warmod"
+    },
+    "round_freeze_end": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:07:18",
+            "event": "round_freeze_end"
+        },
+        "Type": "Warmod"
+    },
+    "grenade_detonate": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:07:31",
+            "event": "grenade_detonate",
+            "round": 1,
+            "player": {
+                "name": "blah",
+                "userId": 6,
+                "uniqueId": "STEAM_1:0:blah",
+                "team": 3,
+                "origin": {
+                    "x": -707.24,
+                    "y": -727.29,
+                    "z": 32.03
+                },
+                "velocity": {
+                    "x": -45.56,
+                    "y": -28.7,
+                    "z": 0
+                },
+                "view": {
+                    "x": -19.52,
+                    "y": 105.11,
+                    "z": 0
+                },
+                "health": 100,
+                "armor": 0,
+                "helmet": 0
+            },
+            "grenade": "molotov"
+        },
+        "Type": "Warmod"
+    },
+    "player_blind": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:07:32",
+            "event": "player_blind",
+            "round": 1,
+            "player": {
+                "name": "blah",
+                "userId": 4,
+                "uniqueId": "STEAM_1:0:blah",
+                "team": 1,
+                "origin": {
+                    "x": 242.29,
+                    "y": -220.73,
+                    "z": 48.22
+                },
+                "velocity": {
+                    "x": 229.3,
+                    "y": 58.59,
+                    "z": 0
+                },
+                "view": {
+                    "x": 4.71,
+                    "y": -59.84,
+                    "z": 0
+                },
+                "health": 0,
+                "armor": 0,
+                "helmet": 0
+            },
+            "duration": 3.78
+        },
+        "Type": "Warmod"
+    },
+    "player_death": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:07:33",
+            "event": "player_death",
+            "round": 1,
+            "attacker": {
+                "name": "blah",
+                "userId": 5,
+                "uniqueId": "STEAM_1:1:blah",
+                "team": 3,
+                "origin": {
+                    "x": 214.26,
+                    "y": -359.4,
+                    "z": 0.03
+                },
+                "velocity": {
+                    "x": -236.66,
+                    "y": 39.89,
+                    "z": 0
+                },
+                "view": {
+                    "x": -26.29,
+                    "y": 20.84,
+                    "z": 0
+                },
+                "health": 100,
+                "armor": 100,
+                "helmet": 0
+            },
+            "assister": {},
+            "victim": {
+                "name": "blah",
+                "userId": 11,
+                "uniqueId": "STEAM_1:0:blah",
+                "team": 2,
+                "origin": {
+                    "x": 328.68,
+                    "y": -311.53,
+                    "z": 58.02
+                },
+                "velocity": {
+                    "x": 18.02,
+                    "y": -116.34,
+                    "z": -181.61
+                },
+                "view": {
+                    "x": 15.47,
+                    "y": 170.58,
+                    "z": 0
+                },
+                "health": 0,
+                "armor": 0,
+                "helmet": 0
+            },
+            "weapon": "usp_silencer",
+            "headshot": 1
+        },
+        "Type": "Warmod"
+    },
+    "bomb_plant_begin": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:07:49",
+            "event": "bomb_plant_begin",
+            "round": 1,
+            "player": {
+                "name": "blah",
+                "userId": 9,
+                "uniqueId": "STEAM_1:0:blah",
+                "team": 2,
+                "origin": {
+                    "x": 66.17,
+                    "y": -713.94,
+                    "z": -27.96
+                },
+                "velocity": {
+                    "x": 55.1,
+                    "y": 27.55,
+                    "z": 0
+                },
+                "view": {
+                    "x": 1.95,
+                    "y": -172.24,
+                    "z": 0
+                },
+                "health": 100,
+                "armor": 0,
+                "helmet": 0
+            },
+            "site": 92
+        },
+        "Type": "Warmod"
+    },
+    "bomb_planted": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:07:52",
+            "event": "bomb_planted",
+            "round": 1,
+            "player": {
+                "name": "blah",
+                "userId": 9,
+                "uniqueId": "STEAM_1:0:blah",
+                "team": 2,
+                "origin": {
+                    "x": 66.18,
+                    "y": -713.94,
+                    "z": -45.96
+                },
+                "velocity": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "view": {
+                    "x": 1.5,
+                    "y": -172.61,
+                    "z": 0
+                },
+                "health": 100,
+                "armor": 0,
+                "helmet": 0
+            },
+            "site": 92
+        },
+        "Type": "Warmod"
+    },
+    "bomb_defuse_begin": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:08:07",
+            "event": "bomb_defuse_begin",
+            "round": 1,
+            "player": {
+                "name": "blah",
+                "userId": 8,
+                "uniqueId": "STEAM_1:0:blah",
+                "team": 3,
+                "origin": {
+                    "x": 49.34,
+                    "y": -773.24,
+                    "z": -27.96
+                },
+                "velocity": {
+                    "x": 127.46,
+                    "y": 148.25,
+                    "z": 0
+                },
+                "view": {
+                    "x": 23.54,
+                    "y": 63.86,
+                    "z": 0
+                },
+                "health": 100,
+                "armor": 100,
+                "helmet": 0
+            },
+            "kit": 0
+        },
+        "Type": "Warmod"
+    },
+    "bomb_defuse_abort": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:08:07",
+            "event": "bomb_defuse_abort",
+            "round": 1,
+            "player": {
+                "name": "blah",
+                "userId": 8,
+                "uniqueId": "STEAM_1:0:blah",
+                "team": 3,
+                "origin": {
+                    "x": 49.34,
+                    "y": -773.24,
+                    "z": -27.96
+                },
+                "velocity": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "view": {
+                    "x": 20.56,
+                    "y": 58.66,
+                    "z": 0
+                },
+                "health": 100,
+                "armor": 100,
+                "helmet": 0
+            }
+        },
+        "Type": "Warmod"
+    },
+    "weapon_stats": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:08:12",
+            "event": "weapon_stats",
+            "round": 1,
+            "player": {
+                "name": "blah",
+                "userId": 5,
+                "uniqueId": "STEAM_1:1:blah",
+                "team": 3
+            },
+            "weapon": "hkp2000",
+            "shots": 0,
+            "hits": 0,
+            "kills": 0,
+            "headshots": 0,
+            "tks": 0,
+            "damage": 0,
+            "deaths": 1,
+            "head": 0,
+            "chest": 0,
+            "stomach": 0,
+            "leftArm": 0,
+            "rightArm": 0,
+            "leftLeg": 0,
+            "rightLeg": 0,
+            "generic": 0
+        },
+        "Type": "Warmod"
+    },
+    "round_stats": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:08:12",
+            "event": "round_stats",
+            "round": 1,
+            "player": {
+                "name": "blah",
+                "userId": 5,
+                "uniqueId": "STEAM_1:1:blah",
+                "team": 3
+            },
+            "shots": 0,
+            "hits": 5,
+            "kills": 1,
+            "headshots": 1,
+            "tks": 0,
+            "damage": 122,
+            "assists": 0,
+            "assists_tk": 0,
+            "deaths": 1,
+            "head": 1,
+            "chest": 1,
+            "stomach": 1,
+            "leftArm": 0,
+            "rightArm": 2,
+            "leftLeg": 0,
+            "rightLeg": 0,
+            "generic": 0
+        },
+        "Type": "Warmod"
+    },
+    "player_clutch": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:08:12",
+            "event": "player_clutch",
+            "round": 1,
+            "player": {
+                "name": "blah",
+                "userId": 8,
+                "uniqueId": "STEAM_1:0:blah",
+                "team": 3
+            },
+            "versus": 2,
+            "frags": 1,
+            "bombPlanted": 1,
+            "won": 0
+        },
+        "Type": "Warmod"
+    },
+    "round_end": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:08:12",
+            "event": "round_end",
+            "round": 1,
+            "winner": 2,
+            "reason": 9
+        },
+        "Type": "Warmod"
+    },
+    "score_update": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:08:12",
+            "event": "score_update",
+            "map": "de_cbble",
+            "round": 1,
+            "teams": [
+                {
+                    "name": "blah",
+                    "team": 2,
+                    "score": 1
+                },
+                {
+                    "name": "blah",
+                    "team": 3,
+                    "score": 0
+                }
+            ],
+            "settings": {
+                "max_rounds": 30,
+                "overtime_enabled": 1,
+                "overtime_max_rounds": 6
+            },
+            "server": {
+                "name": "blah",
+                "ip": "1.2.3.4",
+                "port": 27015
+            }
+        },
+        "Type": "Warmod"
+    },
+    "player_disconnect": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:08:50",
+            "event": "player_disconnect",
+            "round": 2,
+            "player": {
+                "name": "blah",
+                "userId": 4,
+                "uniqueId": "STEAM_1:0:blah",
+                "team": 1
+            },
+            "reason": "Disconnect"
+        },
+        "Type": "Warmod"
+    },
+    "player_team": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:08:50",
+            "event": "player_team",
+            "round": 2,
+            "player": {
+                "name": "blah",
+                "userId": 4,
+                "uniqueId": "STEAM_1:0:blah",
+                "team": 1
+            },
+            "oldTeam": 1,
+            "newTeam": 0
+        },
+        "Type": "Warmod"
+    },
+    "bomb_defused": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:09:54",
+            "event": "bomb_defused",
+            "round": 2,
+            "player": {
+                "name": "twitch.blah",
+                "userId": 14,
+                "uniqueId": "STEAM_1:0:blah",
+                "team": 3,
+                "origin": {
+                    "x": -2635.01,
+                    "y": -1539.26,
+                    "z": 112.03
+                },
+                "velocity": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "view": {
+                    "x": 30.97,
+                    "y": -75.42,
+                    "z": 0
+                },
+                "health": 18,
+                "armor": 77,
+                "helmet": 1
+            },
+            "site": 259
+        },
+        "Type": "Warmod"
+    },
+    "match_paused": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:27:31",
+            "event": "match_paused",
+            "round": 13,
+            "team": 3,
+            "name": "blah",
+            "steamId": "STEAM_1:1:blah"
+        },
+        "Type": "Warmod"
+    },
+    "player_connect": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:27:54",
+            "event": "player_connect",
+            "player": {
+                "name": "twitch.blah",
+                "userId": 16,
+                "uniqueId": "STEAM_1:0:blah",
+                "team": 0
+            },
+            "address": "9.8.7.6",
+            "country": "AU"
+        },
+        "Type": "Warmod"
+    },
+    "half_time": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:30:22",
+            "event": "half_time",
+            "teams": [
+                {
+                    "name": "blah",
+                    "team": 2,
+                    "score": 5
+                },
+                {
+                    "name": "blah",
+                    "team": 3,
+                    "score": 10
+                }
+            ]
+        },
+        "Type": "Warmod"
+    },
+    "bomb_plant_abort": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:32:13",
+            "event": "bomb_plant_abort",
+            "round": 17,
+            "player": {
+                "name": "blah",
+                "userId": 5,
+                "uniqueId": "STEAM_1:1:blah",
+                "team": 2,
+                "origin": {
+                    "x": 426.06,
+                    "y": -903.01,
+                    "z": -25.96
+                },
+                "velocity": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "view": {
+                    "x": 8.65,
+                    "y": 163.42,
+                    "z": 0
+                },
+                "health": 100,
+                "armor": 100,
+                "helmet": 1
+            },
+            "site": 92
+        },
+        "Type": "Warmod"
+    },
+    "full_time": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:38:02",
+            "event": "full_time",
+            "teams": [
+                {
+                    "name": "blah",
+                    "team": 2,
+                    "score": 16
+                },
+                {
+                    "name": "blah",
+                    "team": 3,
+                    "score": 6
+                }
+            ]
+        },
+        "Type": "Warmod"
+    },
+    "match_reset": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:38:06",
+            "event": "match_reset"
+        },
+        "Type": "Warmod"
+    },
+    "log_end": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:38:06",
+            "event": "log_end"
+        },
+        "Type": "Warmod"
+    },
+    "knife_player_disconnect": {
+        "Payload": {
+            "timestamp": "2016-06-09 10:41:07",
+            "event": "knife_player_disconnect",
+            "round": 1,
+            "player": {
+                "name": "Erik",
+                "userId": 18,
+                "uniqueId": "BOT",
+                "team": 3
+            },
+            "reason": "Kicked by Console"
+        },
+        "Type": "Warmod"
+    }
+}
