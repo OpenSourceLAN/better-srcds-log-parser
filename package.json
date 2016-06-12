@@ -1,0 +1,21 @@
+{
+  "name": "better-csgo-log-parser",
+  "version": "1.0.0",
+  "description": "A CSGO log parser that works",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OpenSourceLAN/better-csgo-log-parser.git"
+  },
+  "author": "Chris Holman",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/OpenSourceLAN/better-csgo-log-parser/issues"
+  },
+  "homepage": "https://github.com/OpenSourceLAN/better-csgo-log-parser#readme"
+}

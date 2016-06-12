@@ -15,11 +15,13 @@ import ScoredType = require('./Types/ScoredType');
 import ServerCvarType = require('./Types/ServerCvarType');
 import ServerEventType = require('./Types/ServerEventType');
 import SpawnedType = require('./Types/SpawnedType');
+import SrcdsLogType = require('./Types/SrcdsLog');
 import SuicideType = require('./Types/SuicideType');
 import SwitchedType = require('./Types/SwitchedType');
 import TeamNameType = require('./Types/TeamNameType');
 import TeamTriggeredType = require('./Types/TeamTriggeredType');
 import ThrewType = require('./Types/ThrewType');
+import UnknownType = require('./Types/UnknownType');
 import ValidatedType = require('./Types/ValidatedType');
 import WarmodType = require('./Types/WarmodType');
 
@@ -40,44 +42,62 @@ export class SrcdsLogParser {
 		}
 		return m;
 	}
+
+	private getInstanceOf(time: moment.Moment, rawMessage: string) : SrcdsLogType.ISrcdsLog  {
+
+		var returnValue: SrcdsLogType.ISrcdsLog;
+
+		constructors.forEach((v) => {
+			let regexResult = v.regex.regex.exec(rawMessage);
+			if (regexResult) {
+				returnValue = new v.cons(time, regexResult, v.regex.extraArg);
+			}
+		});
+
+		if (returnValue) 
+			return returnValue;
+		else
+			return new UnknownType.UnknownType(time, rawMessage);
+	}
 }
 
-
-
+/***
+ * Each class has one or more regexes that we can parse to get a value for it. 
+ * We build the list of all available classes and their regexes here. 
+ */
 var constructors = <[{regex: Globals.RegexAssignment, cons: Globals.ConstructableType}]>[];
 
-			// TODO: move all types out to own files, and build this list from require()s once
-			var types: Globals.ConstructableType[] = [
-				AssistType.AssistType,
-				AttackedType.AttackedType,
-				ConnectionType.ConnectionType,
-				KilledType.KilledType,
-				PlayerNameType.PlayerNameType,
-				PlayerTriggeredType.PlayerTriggeredType,
-				PurchasedType.PurchasedType,
-				RconType.RconType,
-				SayType.SayType,
-				ScoredType.ScoredType,
-				ServerCvarType.ServerCvarType,
-				ServerEventType.ServerEventType,
-				SpawnedType.SpawnedType,
-				SuicideType.SuicideType,
-				SwitchedType.SwitchedType,
-				TeamNameType.TeamNameType,
-				TeamTriggeredType.TeamTriggeredType,
-				ThrewType.ThrewType,
-				ValidatedType.ValidatedType,
-				WarmodType.WarmodType,
-			];
-			types.forEach((t) => {
-				if (Array.isArray(t.Identifier)) {
-					(<Globals.RegexAssignment[]>t.Identifier).forEach((i) => {
-						constructors.push({regex: i, cons: t});
-					})
-				} else {
-					constructors.push({
-						regex: (<Globals.RegexAssignment>t.Identifier),
-						cons: t
-					})
-				}
-			});
+var types: Globals.ConstructableType[] = [
+	AssistType.AssistType,
+	AttackedType.AttackedType,
+	ConnectionType.ConnectionType,
+	KilledType.KilledType,
+	PlayerNameType.PlayerNameType,
+	PlayerTriggeredType.PlayerTriggeredType,
+	PurchasedType.PurchasedType,
+	RconType.RconType,
+	SayType.SayType,
+	ScoredType.ScoredType,
+	ServerCvarType.ServerCvarType,
+	ServerEventType.ServerEventType,
+	SpawnedType.SpawnedType,
+	SuicideType.SuicideType,
+	SwitchedType.SwitchedType,
+	TeamNameType.TeamNameType,
+	TeamTriggeredType.TeamTriggeredType,
+	ThrewType.ThrewType,
+	ValidatedType.ValidatedType,
+	WarmodType.WarmodType,
+];
+types.forEach((t) => {
+	if (Array.isArray(t.Identifier)) {
+		(<Globals.RegexAssignment[]>t.Identifier).forEach((i) => {
+			constructors.push({regex: i, cons: t});
+		})
+	} else {
+		constructors.push({
+			regex: (<Globals.RegexAssignment>t.Identifier),
+			cons: t
+		})
+	}
+});
