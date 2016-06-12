@@ -1,6 +1,8 @@
+import SrcdsLogType = require("./SrcdsLog");
+import Globals = require("../globals");
 // server_cvar: "sv_deadtalk" "0"
 // "mp_fraglimit" = "0"
-export class ServerCvarType extends SrcdsLog {
+export class ServerCvarType extends SrcdsLogType.SrcdsLog {
 	public Cvar: string;
 	public Value: any;
 	constructor(time: moment.Moment, data: RegExpExecArray, extraArg: string) {
@@ -9,7 +11,7 @@ export class ServerCvarType extends SrcdsLog {
 		this.Value = data[2];
 		this.Type = "ServerCvar";
 	}
-	static Identifier: RegexAssignment[] = [{
+	static Identifier: Globals.RegexAssignment[] = [{
 		regex: /^server_cvar: "(\S+)" "(.*)"$/,
 		extraArg: 'servercvar'
 	},

@@ -1,3 +1,5 @@
+import SrcdsLogType = require("./SrcdsLog");
+import Globals = require("../globals");
 export enum TeamTriggerType {
 	SFUI_Notice_Terrorists_Win = 1,
 	SFUI_Notice_CTs_Win,
@@ -8,9 +10,9 @@ export enum TeamTriggerType {
 }
 
 // Team "TERRORIST" triggered "SFUI_Notice_Target_Bombed" (CT "14") (T "14")
-export class TeamTriggeredType extends SrcdsLog {
+export class TeamTriggeredType extends SrcdsLogType.SrcdsLog {
 	public EventType: TeamTriggerType;
-	public Team: Team;
+	public Team: Globals.Team;
 	public TerroristScore: number;
 	public CounterTerroristScore: number;
 
@@ -19,7 +21,7 @@ export class TeamTriggeredType extends SrcdsLog {
 		this.Type = "TeamTriggered";
 		let eventType:string;
 
-		this.Team = getTeam(data[1]);
+		this.Team = Globals.getTeam(data[1]);
 		eventType = data[2];
 		this.TerroristScore = parseInt(data[4]);
 		this.CounterTerroristScore = parseInt(data[3]);
@@ -35,8 +37,8 @@ export class TeamTriggeredType extends SrcdsLog {
 		}
 	}
 
-	static Identifier: RegexAssignment = {
+	static Identifier: Globals.RegexAssignment = {
 		// Team "TERRORIST" triggered "SFUI_Notice_Target_Bombed" (CT "14") (T "14")
-		regex: new RegExp("^Team " + TeamRegex.source + / triggered "(\S+)" \(CT "(\d+)"\) \(T "(\d+)"\)$/.source),
+		regex: new RegExp("^Team " + Globals.TeamRegex.source + / triggered "(\S+)" \(CT "(\d+)"\) \(T "(\d+)"\)$/.source),
 	}
 }

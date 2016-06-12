@@ -1,10 +1,12 @@
+import SrcdsType = require("./Types/SrcdsLog");
+
 var RootSteamIdRegex = /".+?\<\d*\>\<(?:STEAM_\d+:\d+:\d+|BOT|Console)\>(?:\<\w*\>)?"/;
 var RootChickenRegex = /"chicken\<\d+\>"/;
-var SteamIdRegex = new RegExp("(" + RootSteamIdRegex.source + "|World|" + RootChickenRegex.source + ")");
-var TeamRegex = /["<]?(CT|TERRORIST|Spectator|Unassigned)[">]?/;
-var VectorRegex = /\[?([-.\d]+) ([-.\d]+) ([-.\d]+)\]?/;
+export var SteamIdRegex = new RegExp("(" + RootSteamIdRegex.source + "|World|" + RootChickenRegex.source + ")");
+export var TeamRegex = /["<]?(CT|TERRORIST|Spectator|Unassigned)[">]?/;
+export var VectorRegex = /\[?([-.\d]+) ([-.\d]+) ([-.\d]+)\]?/;
 
-function getTeam(team:string) {
+export function getTeam(team:string) {
 	if (team == "TERRORIST") {
 		return Team.Terrorist;
 	} else if (team == "CT") {
@@ -65,4 +67,18 @@ export class Vector {
 		this.y = parseInt(y.replace(Vector.ReplaceRegex, ''));
 		this.z = parseInt(z.replace(Vector.ReplaceRegex, ''));
 	}
+}
+
+
+export interface ConstructableType {
+	new(time:moment.Moment, data: RegExpExecArray, extraArg?: any): SrcdsType.ISrcdsLog;
+	Identifier: RegexAssignment | RegexAssignment[];
+}
+
+
+
+export interface RegexAssignment {
+	regex: RegExp;
+	//class: ConstructableType; //(time:moment.Moment, data: RegExpExecArray, extraArg?: any) => void;
+	extraArg?: any;
 }

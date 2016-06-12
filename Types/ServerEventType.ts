@@ -1,3 +1,5 @@
+import SrcdsLogType = require("./SrcdsLog");
+import Globals = require("../globals");
 
 export enum ServerEvents {
 	MapLoading = 1,
@@ -14,7 +16,7 @@ export enum ServerEvents {
 // Log file closed
 // server_message: "quit"
 // server_message: "restart"
-export class ServerEventType extends SrcdsLog {
+export class ServerEventType extends SrcdsLogType.SrcdsLog {
 	public EventType: ServerEvents;
 	public Data: any;
 	constructor(time: moment.Moment, data: RegExpExecArray, extraArg: string) {
@@ -47,7 +49,7 @@ export class ServerEventType extends SrcdsLog {
 			default: throw `invalid extraArg supplied to ServerEventType - ${extraArg}`;
 		}
 	}
-	static Identifier: RegexAssignment[] = [{
+	static Identifier: Globals.RegexAssignment[] = [{
 		regex: /^(Loading|Started) map "(.+)"(?: \(CRC "([-\d]+)"\))?$/,
 		extraArg: 'loadingmap'
 	},{

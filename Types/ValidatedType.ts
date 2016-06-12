@@ -1,7 +1,9 @@
+import SrcdsLogType = require("./SrcdsLog");
+import Globals = require("../globals");
 // "PlayerName<8><STEAM_1:0:123124124><>" STEAM USERID validated
 // STEAMAUTH: Client Some Username goes here received failure code 6
-export class ValidatedType extends SrcdsLog {
-	public Player: Player | string;
+export class ValidatedType extends SrcdsLogType.SrcdsLog {
+	public Player: Globals.Player | string;
 	public Success: Boolean;
 	public ErrorCode: number;
 	constructor(time:moment.Moment, data: RegExpExecArray, messageType: string) {
@@ -9,7 +11,7 @@ export class ValidatedType extends SrcdsLog {
 		this.Type = "Validated";
 
 		if (messageType == 'valid') {
-			this.Player = new Player(data[1]);
+			this.Player = new Globals.Player(data[1]);
 			this.Success = true;
 		} else if (messageType == 'failed') {
 			this.Player = data[1];
@@ -20,10 +22,10 @@ export class ValidatedType extends SrcdsLog {
 		}
 	}
 
-	static Identifier: RegexAssignment[] = [
+	static Identifier: Globals.RegexAssignment[] = [
 	{
 		// "PlayerName<8><STEAM_1:0:123124124><>" STEAM USERID validated
-		regex: new RegExp("^" + SteamIdRegex.source + / STEAM USERID validated$/.source),
+		regex: new RegExp("^" + Globals.SteamIdRegex.source + / STEAM USERID validated$/.source),
 		extraArg: 'valid'
 	},
 	{

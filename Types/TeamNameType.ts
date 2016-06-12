@@ -1,15 +1,17 @@
+import SrcdsLogType = require("./SrcdsLog");
+import Globals = require("../globals");
 // Team playing "CT": blarhg
-export class TeamNameType extends SrcdsLog {
-	public Team: Team;
+export class TeamNameType extends SrcdsLogType.SrcdsLog {
+	public Team: Globals.Team;
 	public Name: string;
 	constructor(time:moment.Moment, data: RegExpExecArray) {
 		super(time);
-		this.Team = getTeam(data[1]);
+		this.Team = Globals.getTeam(data[1]);
 		this.Name = data[2];
 		this.Type = "TeamName";
 	}
 
-	static Identifier: RegexAssignment = {
-		regex: new RegExp(/^Team playing /.source + TeamRegex.source + /: (.+)$/.source),
+	static Identifier: Globals.RegexAssignment = {
+		regex: new RegExp(/^Team playing /.source + Globals.TeamRegex.source + /: (.+)$/.source),
 	}
 }

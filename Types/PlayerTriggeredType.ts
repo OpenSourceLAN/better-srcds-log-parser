@@ -1,3 +1,5 @@
+import SrcdsLogType = require("./SrcdsLog");
+import Globals = require("../globals");
 
 export enum PlayerTriggerType {
 	Begin_Bomb_Defuse_Without_Kit,
@@ -17,15 +19,15 @@ export enum PlayerTriggerType {
 }
 
 // "SomePlayer<5><STEAM_1:1:12345><TERRORIST>" triggered "Dropped_The_Bomb"
-export class PlayerTriggeredType extends SrcdsLog {
+export class PlayerTriggeredType extends SrcdsLogType.SrcdsLog {
 	public EventType: PlayerTriggerType;
-	public Player: Player;
+	public Player: Globals.Player;
 	public Value: string;
 
 	constructor(time:moment.Moment, data: RegExpExecArray) {
 		super(time);
 		this.Type = "PlayerTriggered";
-		this.Player = new Player(data[1]);
+		this.Player = new Globals.Player(data[1]);
 		let eventType:string = data[2];
 		this.Value = data[3];
 		
@@ -47,10 +49,10 @@ export class PlayerTriggeredType extends SrcdsLog {
 			default: this.EventType = PlayerTriggerType.Unknown; console.error("Unknown player trigger event type: ", eventType); break;
 		}
 	}
-	static Identifier: RegexAssignment[] = [{
-		regex: new RegExp(/^/.source + SteamIdRegex.source + / triggered "(\S+)"(?: \(value "(.*)"\))?$/.source)
+	static Identifier: Globals.RegexAssignment[] = [{
+		regex: new RegExp(/^/.source + Globals.SteamIdRegex.source + / triggered "(\S+)"(?: \(value "(.*)"\))?$/.source)
 	},
 	{
-		regex: new RegExp(/^/.source + SteamIdRegex.source + / triggered "(\S+)" on "(\S+)"$/.source)
+		regex: new RegExp(/^/.source + Globals.SteamIdRegex.source + / triggered "(\S+)" on "(\S+)"$/.source)
 	}]
 }
