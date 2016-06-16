@@ -26,6 +26,34 @@ import WarmodType = require('./Types/WarmodType');
 
 let lengthOfDate: number = "06/09/2016 - 10:07:28: ".length;
 
+export type ISrcdsLog = SrcdsLogType.ISrcdsLog;
+export type AssistType = AssistType.AssistType;
+export type AttackedType = AttackedType.AttackedType;
+export type ConnectionType = ConnectionType.ConnectionType;
+export type KilledType = KilledType.KilledType;
+export type PlayerNameType = PlayerNameType.PlayerNameType;
+export type PlayerTriggeredType = PlayerTriggeredType.PlayerTriggeredType;
+export type PurchasedType = PurchasedType.PurchasedType;
+export type RconType = RconType.RconType;
+export type SayType = SayType.SayType;
+export type ScoredType = ScoredType.ScoredType;
+export type ServerCvarType = ServerCvarType.ServerCvarType;
+export type ServerEventType = ServerEventType.ServerEventType;
+export type SpawnedType = SpawnedType.SpawnedType;
+export type SrcdsLog = SrcdsLogType.SrcdsLog;
+export type SuicideType = SuicideType.SuicideType;
+export type SwitchedType = SwitchedType.SwitchedType;
+export type TeamNameType = TeamNameType.TeamNameType;
+export type TeamTriggeredType = TeamTriggeredType.TeamTriggeredType;
+export type ThrewType = ThrewType.ThrewType;
+export type ValidatedType = ValidatedType.ValidatedType;
+export type WarmodType = WarmodType.WarmodType;
+
+export type ConnectionActions = ConnectionType.ConnectionActions;
+export type PlayerTriggerType = PlayerTriggeredType.PlayerTriggerType;
+export type TeamTriggerType = TeamTriggeredType.TeamTriggerType;
+export type Team = Globals.Team;
+
 export class SrcdsLogParser {
 	parseLine(line:string) : t.ISrcdsLog {
 		let date = this.getDate(line.slice(0, lengthOfDate - 2));
