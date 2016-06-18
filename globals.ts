@@ -37,6 +37,7 @@ export class Player {
 	constructor(playerString: string) {
 		if (playerString == 'World') {
 			this.Name = 'World';
+			this.SteamID == 'World';
 		} else if (playerString && playerString.length > 0) {
 			var regexResult = Player.regex.exec(playerString);
 			if (regexResult) {
