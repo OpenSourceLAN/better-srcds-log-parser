@@ -49,10 +49,10 @@ export type ThrewType = ThrewType.ThrewType;
 export type ValidatedType = ValidatedType.ValidatedType;
 export type WarmodType = WarmodType.WarmodType;
 
-export type ConnectionActions = ConnectionType.ConnectionActions;
-export type PlayerTriggerType = PlayerTriggeredType.PlayerTriggerType;
-export type TeamTriggerType = TeamTriggeredType.TeamTriggerType;
-export type Team = Globals.Team;
+export { ConnectionActions } from "./Types/ConnectionType" //.ConnectionActions;
+export { PlayerTriggerType } from "./Types/PlayerTriggeredType";
+export { TeamTriggerType } from "./Types/TeamTriggeredType";
+export { Team } from "./globals";
 
 export class SrcdsLogParser {
 	parseLine(line:string) : t.ISrcdsLog {
