@@ -53,6 +53,7 @@ export { ConnectionActions } from "./Types/ConnectionType" //.ConnectionActions;
 export { PlayerTriggerType } from "./Types/PlayerTriggeredType";
 export { TeamTriggerType } from "./Types/TeamTriggeredType";
 export { Team } from "./globals";
+export { ServerEvents } from "./Types/ServerEventType"
 
 export class SrcdsLogParser {
 	parseLine(line:string) : t.ISrcdsLog {
