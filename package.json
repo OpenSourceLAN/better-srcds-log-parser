@@ -1,7 +1,7 @@
 {
-  "name": "better-csgo-log-parser",
+  "name": "better-srcds-log-parser",
   "version": "1.0.0",
-  "description": "A CSGO log parser that works",
+  "description": "A srcds (CS:GO, TF2, etc)  log parser that works",
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {},
@@ -10,12 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OpenSourceLAN/better-csgo-log-parser.git"
+    "url": "git+https://github.com/OpenSourceLAN/better-srcds-log-parser.git"
   },
   "author": "Chris Holman",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/OpenSourceLAN/better-csgo-log-parser/issues"
+    "url": "https://github.com/OpenSourceLAN/better-srcds-log-parser/issues"
   },
-  "homepage": "https://github.com/OpenSourceLAN/better-csgo-log-parser#readme"
+  "homepage": "https://github.com/OpenSourceLAN/better-srcds-log-parser#readme"
 }
