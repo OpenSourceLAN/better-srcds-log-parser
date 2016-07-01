@@ -1,3 +1,4 @@
+import * as moment from "moment";
 import SrcdsLogType = require("./SrcdsLog");
 import Globals = require("../globals");
 // "PlayerName<10><STEAM_1:1:123124><TERRORIST>" [-1117 2465 -72] committed suicide with "world"

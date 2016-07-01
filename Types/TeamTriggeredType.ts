@@ -1,3 +1,4 @@
+import * as moment from "moment";
 import SrcdsLogType = require("./SrcdsLog");
 import Globals = require("../globals");
 export enum TeamTriggerType {

@@ -1,3 +1,4 @@
+import * as moment from "moment";
 import SrcdsType = require("./Types/SrcdsLog");
 
 var RootSteamIdRegex = /".+?\<\d*\>\<(?:STEAM_\d+:\d+:\d+|BOT|Console)\>(?:\<\w*\>)?"/;

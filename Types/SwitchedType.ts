@@ -1,3 +1,4 @@
+import * as moment from "moment";
 import SrcdsLogType = require("./SrcdsLog");
 import Globals = require("../globals");
 // "PlayerName<21><STEAM_1:0:123123>" switched from team <Unassigned> to <Spectator>

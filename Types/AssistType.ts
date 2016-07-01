@@ -1,3 +1,4 @@
+import * as moment from "moment";
 import SrcdsLogType = require("./SrcdsLog");
 import Globals = require("../globals");
 // "AssitantName<16><STEAM_1:0:123123><TERRORIST>" assisted killing "VictimName<12><STEAM_1:0:15612><CT>"

@@ -1,3 +1,4 @@
+import * as moment from "moment";
 import SrcdsLogType = require("./SrcdsLog");
 import Globals = require("../globals");
 // "SomePlayer<9><STEAM_1:0:123455><CT>" threw smokegrenade [198 -683 1616]

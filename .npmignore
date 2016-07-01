@@ -1,8 +1,5 @@
-*.js
-*.js.map
-typings/
-
-*.d.ts
+*.ts
+!*.d.ts
 
 # Logs
 logs

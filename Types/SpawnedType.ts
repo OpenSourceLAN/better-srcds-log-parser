@@ -1,3 +1,4 @@
+import * as moment from "moment";
 import SrcdsLogType = require("./SrcdsLog");
 import Globals = require("../globals");
 // Molotov projectile spawned at 640.820129 1639.490845 1771.947754, velocity -778.071533 338.524658 249.602264
