@@ -13,7 +13,7 @@ export class SrcdsLog implements ISrcdsLog {
 	public static Constructors: [{regex: Globals.RegexAssignment, cons: Globals.ConstructableType}];
 
 	constructor(time: moment.Moment) {
-		//this.Time = time;	
+		this.Time = time;
 	}
 }
 

@@ -1,6 +1,6 @@
 {
   "name": "better-srcds-log-parser",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A srcds (CS:GO, TF2, etc)  log parser that works",
   "main": "index.js",
   "dependencies": {
