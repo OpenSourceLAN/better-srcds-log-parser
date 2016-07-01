@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "A srcds (CS:GO, TF2, etc)  log parser that works",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "moment": "^2.13.0"
+  },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
