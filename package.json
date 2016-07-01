@@ -17,5 +17,6 @@
   "bugs": {
     "url": "https://github.com/OpenSourceLAN/better-srcds-log-parser/issues"
   },
-  "homepage": "https://github.com/OpenSourceLAN/better-srcds-log-parser#readme"
+  "homepage": "https://github.com/OpenSourceLAN/better-srcds-log-parser#readme",
+  "typings": "./index.d.ts"
 }
