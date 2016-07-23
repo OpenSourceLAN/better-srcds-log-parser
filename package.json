@@ -2,6 +2,14 @@
   "name": "better-srcds-log-parser",
   "version": "1.0.2",
   "description": "A srcds (CS:GO, TF2, etc)  log parser that works",
+  "keywords": [
+    "srcds",
+    "logs",
+    "counter",
+    "strike",
+    "csgo",
+    "tf2"
+  ],
   "main": "index.js",
   "dependencies": {
     "moment": "^2.13.0"
