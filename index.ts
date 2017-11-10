@@ -24,7 +24,8 @@ import ThrewType = require('./Types/ThrewType');
 import ValidatedType = require('./Types/ValidatedType');
 import WarmodType = require('./Types/WarmodType');
 
-let lengthOfDate: number = "06/09/2016 - 10:07:28: ".length;
+let lengthOfUdpDate: number = "06/09/2016 - 10:07:28: ".length;
+let lengthOfHttpDate: number = "11/11/2017 - 09:12:07.291 - ".length;
 
 export type ISrcdsLog = SrcdsLogType.ISrcdsLog;
 export type AssistType = AssistType.AssistType;
@@ -56,10 +57,23 @@ export { Team } from "./globals";
 export { ServerEvents } from "./Types/ServerEventType"
 
 export class SrcdsLogParser {
+	endOfDate: number;
+	startOfLogMessage: number;
+
+	constructor(httpTimestampFormat: boolean = false) {
+		if (httpTimestampFormat) {
+			this.endOfDate = lengthOfHttpDate - 3;
+			this.startOfLogMessage = lengthOfHttpDate;
+		} else {
+			this.endOfDate = lengthOfUdpDate - 2;
+			this.startOfLogMessage = lengthOfUdpDate;
+		}
+	}
+
 	parseLine(line:string) : t.ISrcdsLog {
-		let date = this.getDate(line.slice(0, lengthOfDate - 2));
+		let date = this.getDate(line.slice(0, this.endOfDate));
 		
-		return this.getInstanceOf(date, line.slice(lengthOfDate));
+		return this.getInstanceOf(date, line.slice(this.startOfLogMessage));
 	}
 
 	private getDate(dateTokens: string) : moment.Moment {

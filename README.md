@@ -98,6 +98,24 @@ See `warmod-types.json` and `srcds-types.json` for, respectively, the log entry 
 that Warmod will emit, and the log entry types that a vanilla CS:GO server will emit. 
 Both can be enabled on a server at the same time. 
 
+### Building and modifying
+
+This library is built using typescript and typings. If you have typescript and typings
+installed globally (which you can do with `npm install -g typings typescript`), then
+you can build the project with:
+
+```
+typings install #you only need to do this once
+tsc
+```
+
+Otherwise, there is an npm build script, which you can invoke with
+
+```
+npm run-script build
+```
+
+This has been tested on Linux. Should probably work on Windows too.
 
 ### License 
 GPL 3.0. See LICENSE for more details. 
