@@ -13,7 +13,7 @@ export class RconType extends SrcdsLogType.SrcdsLog {
 		this.Type = "Rcon";
 	 }
 	 static Identifier: Globals.RegexAssignment = {
-	 	regex: /^rcon from "(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}:\d{1,5})": command "(.+)"$/
+	 	regex: /^rcon from "(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}:\d{1,5})": command "(.*)"$/
 	 }
 
 }
