@@ -1,7 +1,7 @@
 import * as moment from "moment";
 import SrcdsType = require("./Types/SrcdsLog");
 
-var RootSteamIdRegex = /".+?\<\d*\>\<(?:STEAM_\d+:\d+:\d+|BOT|Console)\>(?:\<\w*\>)?"/;
+var RootSteamIdRegex = /".+?\<\d*\>\<(?:\[U:1:\d+\]|STEAM_\d+:\d+:\d+|BOT|Console)\>(?:\<\w*\>)?"/;
 var RootChickenRegex = /"chicken\<\d+\>"/;
 export var SteamIdRegex = new RegExp("(" + RootSteamIdRegex.source + "|World|" + RootChickenRegex.source + ")");
 export var TeamRegex = /["<]?(CT|TERRORIST|Spectator|Unassigned)[">]?/;
@@ -29,7 +29,7 @@ export enum Team {
 }
 
 export class Player {
-	static regex: RegExp = /^"(.+)\<(\d*)\>\<(STEAM_\d+:\d+:\d+|BOT|Console)\>(?:\<(\w*)\>)?"$/;
+	static regex: RegExp = /^"(.+)\<(\d*)\>\<(\[U:1:\d+\]|STEAM_\d+:\d+:\d+|BOT|Console)\>(?:\<(\w*)\>)?"/;
 	static chickenRegex = /^"chicken\<(\d+)\>"$/
 	public Name: string;
 	public PlayerID: number;
