@@ -93,7 +93,8 @@ export class SrcdsLogParser {
  * Each class has one or more regexes that we can parse to get a value for it. 
  * We build the list of all available classes and their regexes here. 
  */
-var constructors = <[{regex: Globals.RegexAssignment, cons: Globals.ConstructableType}]>[];
+type constructorelement = {regex: Globals.RegexAssignment, cons: Globals.ConstructableType};
+var constructors: [constructorelement] = [] as unknown as [constructorelement];
 
 var types: Globals.ConstructableType[] = [
 	AssistType.AssistType,
